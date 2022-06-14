@@ -1,0 +1,36 @@
+body{
+    background: #8080806b;
+}
+
+/* Header styles */
+header{
+    background: white;
+    padding: 22px 0;
+    box-shadow: 5px 0 0 black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container nav{
+    display: flex;
+}
+
+header .container nav a{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+header .container nav a:last-child{
+    margin-right: 0;
+}
+
