@@ -107,12 +107,6 @@ a:focus{
  [hidden] {
      display: none;
  }
-
- .g-recaptcha{
-      display: flex;
-    justify-content: center;
-    transform: scale(.8);
- }
  /* ==========================================================================
     Base
     ========================================================================== */
@@ -574,14 +568,22 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0px 0px 10px #00000036;
+    position: relative;
 }
 
 .card__primary figure{
-
+    height: 0;
+    padding-bottom: 62.5%;
+    position: relative;
 }
 
 .card__primary figure img{
     width: 100%;
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
 }
 
 .card__primary .content{
@@ -599,4 +601,60 @@ input[type=number]::-webkit-outer-spin-button {
 
 .card__primary .content .link{
     font-weight: 700;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 1180px){
+    .container{
+        padding: 0 20px;
+    }
+
+    .title__primary {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .btn{
+        font-size: 18px;
+        line-height: 24px;
+        padding: 12px 30px;
+    }
+
+    .title__secondary{
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    main{
+        padding-top: 60px;
+    }
+
+    .card__primary .content{
+        padding: 30px 20px;
+    }
+
+    .card__primary .content h3 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .card__primary .content p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 499px){
+    .title__primary {
+        font-size: 46px;
+        line-height: 46px;
+    }
+
+    .title__secondary {
+        font-size: 30px;
+        line-height: 30px;
+    }
 }
