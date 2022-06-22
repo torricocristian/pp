@@ -527,6 +527,10 @@ input[type=number]::-webkit-outer-spin-button {
     opacity: 1;
 }
 
+.link.active{
+    opacity: 1;
+}
+
 .title__primary{
     font-size: 72px;
     line-height: 72px;

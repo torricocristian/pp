@@ -121,6 +121,78 @@ footer{
     text-align: center;
 }
 
+/* INTERNAS */
+body:not(.home){
+
+}
+
+body:not(.home) main{
+    padding-top: 0;
+}
+
+body:not(.home) header{
+    background: transparent;
+    position: absolute;
+    box-shadow: none;
+}
+
+body:not(.home) header .container nav a{
+    color: white;
+}
+
+body:not(.home) #banner{
+    color: white;
+    background-color: #192d35;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 70px;
+    min-height: 500px;
+    display: flex;
+    position: relative;
+}
+
+body:not(.home) #banner h1{
+    color: white;
+    margin-bottom: 30px;
+}
+
+body:not(.home) #banner .container{
+    max-width: 740px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#content{
+    padding: 60px 0;
+}
+
+#content .info-block{ 
+    display: flex;
+    align-items: center;
+}
+
+#content .info-block .image{
+    width: 500px;
+}
+
+#content .info-block .image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#content .info-block .data{
+    width: calc(100% - 500px);
+    padding-left: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#content .info-block .data .title__secondary{
+    margin-bottom: 30px;
+}
 
 @media screen and (max-width: 1180px){
     #hero .container .data-content p{
@@ -129,10 +201,32 @@ footer{
     }    
 }
 
+@media screen and (max-width: 880px){
+    #content .info-block{
+        flex-direction: column-reverse;
+    }
+
+    #content .info-block .data{
+        width: 100%;
+        padding: 0;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    #content .info-block .image {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
 @media screen and (max-width: 767px){
 
     header{
         padding: 16px 0;
+    }
+
+    header .container .logo{
+        margin-bottom: 10px;
     }
 
     header .container .logo img{
@@ -140,8 +234,12 @@ footer{
     }
 
     header .container nav a{
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    header .container{
+        flex-direction: column;
     }
 
     #hero{
@@ -181,6 +279,11 @@ footer{
 
     #grew-up .container .card__primary:last-child{
         margin-bottom: 0
+    }
+
+    #content{
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
 
