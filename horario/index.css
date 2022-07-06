@@ -1,0 +1,75 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#cronograma-1,
+#cronograma-2{
+    overflow: auto;
+}
+
+.container-fluid,
+.container{
+    min-width: 820px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.col-2{
+    padding: 15px 10px;
+}
+
+.row.header,
+.row > div:nth-child(1){
+    font-weight: bold;
+}
+
+.is-probabilidad{
+    background: #186dc7;
+    color: white;
+}
+
+.is-electrotecnia{
+    color: white;
+    background: #da4937;
+}
+
+.is-economia{
+    background: #8d2b5a;
+    color: white;
+}
+
+.is-ingles{
+    color: white;
+    background: #628f50;
+}
+
+.is-tecnologia{
+    background: #f8fd7b;
+}
+
+.is-electromecanica{
+    background: #eca975;
+    color: white;
+}
+
+.is-matematica{
+    box-shadow: inset 0px 0px 0px 2px #186dc7;
+    color: #186dc7;
+}
+
+.is-termodinamica{
+    box-shadow: inset 0px 0px 0px 2px #8d2b5a;
+    color: #8d2b5a;
+}
+
+.is-mecanica{
+    background: #cf75a5;
+    color: white;
+}
